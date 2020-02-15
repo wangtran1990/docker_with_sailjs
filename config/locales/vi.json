@@ -1,0 +1,7 @@
+{
+  "Missing Parameter": "Thiếu tham số",
+  "Invalid Parameter": "Tham số không hợp lệ",
+  "API authentication failed": "Xác thực Token không thành công",
+  "Get token failed": "Lấy Token thất bại",
+  "Unknown error": "Lỗi không xác định. Vui lòng liên hệ 18009090 để được hỗ trợ."
+}

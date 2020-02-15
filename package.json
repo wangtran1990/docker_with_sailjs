@@ -1,0 +1,56 @@
+{
+  "name": "fimplus-promotion-service",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Fim+ PROMOTION Service",
+  "keywords": [
+    "fimplus",
+    "Fim+",
+    "promotion"
+  ],
+  "dependencies": {
+    "@sailshq/lodash": "^3.10.3",
+    "async": "^3.1.0",
+    "ioredis": "^4.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "request": "^2.88.0",
+    "request-as-curl": "^0.1.0",
+    "sails": "^1.2.3",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sequelize": "^1.2.0",
+    "sails-hook-sockets": "^2.0.0",
+    "sails-mysql": "^1.0.1",
+    "sequelize": "^5.12.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "eslint": "5.16.0",
+    "jsdoc": "^3.6.3",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "apidoc": "apidoc -i api/controllers -o docs/api",
+    "jsdoc": "jsdoc -c jsdoc.json",
+    "local": "nodemon sails lift",
+    "dev": "NODE_ENV=development node app.js",
+    "stag": "NODE_ENV=staging node app.js",
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/admin/sails-1-2-3.git"
+  },
+  "author": "QuangTD",
+  "license": "private",
+  "engines": {
+    "node": "^8.15"
+  }
+}
