@@ -1,4 +1,4 @@
-# Test SailsJs service
+# Test Sails service
 
 a [Sails v1](https://sailsjs.com) application builded with love (by QuangTD)
 
