@@ -1,12 +1,6 @@
-# Fim+ PROMOTION service
+# Test SailsJs service
 
 a [Sails v1](https://sailsjs.com) application builded with love (by QuangTD)
-
-### Note for teammate
-+ To run the project, please finding the commands in package.json
-+ This project using ESlint, you can install extension for your editor to real time linting
-+ JSDoc using for documenting /services (refer command in package.json)
-+ APIDoc using for documenting /controllers (refer command in package.json)
 
 ### Links
 
