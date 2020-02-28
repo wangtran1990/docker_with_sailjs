@@ -1,7 +1,17 @@
 FROM node
 
+ENV APP_PATH /venv
+
+WORKDIR $APP_PATH
+
+COPY start.sh /venv
+
+COPY source /venv
+
+RUN chmod a+x /venv/*
+
 RUN npm install
 
-EXPOSE 1400
+ENTRYPOINT ["/venv/start.sh"]
 
-CMD [ "npm run", "stag",  ]
+EXPOSE 1400
