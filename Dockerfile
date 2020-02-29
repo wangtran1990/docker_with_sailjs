@@ -10,7 +10,11 @@ COPY source /venv
 
 RUN chmod a+x /venv/*
 
-RUN npm install
+RUN npm install pm2 -g --silent
+
+RUN npm install --silent
+
+ENV NODE_ENV=staging
 
 ENTRYPOINT ["/venv/start.sh"]
 

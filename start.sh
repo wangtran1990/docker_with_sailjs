@@ -1,2 +1,2 @@
 #!/bin/bash
-NODE_ENV=staging node app
+pm2-runtime start app.js -i max
