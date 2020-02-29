@@ -39,6 +39,8 @@
     "dev": "NODE_ENV=development node app.js",
     "stag": "NODE_ENV=staging node app.js",
     "start": "NODE_ENV=production node app.js",
+    "builddocker": "docker build -t quangtd/sails:lastest .",
+    "rundocker": "docker run -p 1400:1400 quangtd/sails:lastest",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
