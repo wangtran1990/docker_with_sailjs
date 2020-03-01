@@ -25,7 +25,7 @@ function healthCheck (req, res) {
     .then((result) => {
       return res.ok({
         error: 0,
-        message: `Thank goodness, my service still alive! Let relaxing. DB Time ${JSON.stringify(result[0].time)}`
+        message: `Thank goodness!!!!!, my service still alive! Let relaxing. DB Time ${JSON.stringify(result[0].time)}`
       });
     })
     .catch((error) => {
